@@ -118,12 +118,27 @@ df.loc[
     "status"
 ] = "符合要求"
 
-print(df[[
+status_priority = {
+    "符合要求": 1,
+    "待核验": 2,
+    "不符合要求": 3
+}
+
+df["status_priority"] = df["status"].map(
+    status_priority
+)
+
+ranked = df.sort_values(
+    by=["status_priority", "tuition_amount"],
+    ascending=[True, True],
+    na_position="last"
+)
+
+print(ranked[[
     "school",
     "program",
     "tuition_amount",
-    "ielts_min",
-    "missing_required",
-    "explicit_mismatch",
-    "status"
+    "currency",
+    "status",
+    "status_priority"
 ]])

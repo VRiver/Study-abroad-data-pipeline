@@ -1,0 +1,6 @@
+school,country,city,program,degree,major,ielts_text,tuition_text,deadline,source_url
+University A,USA,New York,Data Science,Master,Computer Science,IELTS 6.5 overall,"$42,000 per year",2026-01-15,https://example.edu/a
+University B,United Kingdom,London,Business Analytics,Master,Business,IELTS 7.0 overall,"GBP 28000/year",2026-03-01,https://example.edu/b
+University C,Canada,Toronto,Public Policy,Master,Social Science,,CAD 32000/year,2026-02-01,https://example.edu/c
+University A,United States,New York,Data Science,Master,Computer Science,IELTS 6.5 overall,"$42,000 per year",2026-01-15,https://example.edu/a
+University D,Australia,Sydney,Information Systems,Master,Information Technology,IELTS 6.5 overall,,2026-04-15,https://example.edu/d

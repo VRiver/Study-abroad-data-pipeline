@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS study_db;
+USE study_db;
+DROP TABLE IF EXISTS requirements;
+DROP TABLE IF EXISTS programs;
+DROP TABLE IF EXISTS schools;
+CREATE TABLE schools (school_id INTEGER PRIMARY KEY, school TEXT, country TEXT, city TEXT);
+CREATE TABLE programs (program_id INTEGER PRIMARY KEY, school_id INTEGER, program TEXT, degree TEXT, major TEXT, tuition_usd REAL, deadline TEXT, source_url TEXT);
+CREATE TABLE requirements (requirement_id INTEGER PRIMARY KEY, program_id INTEGER, ielts_min REAL, source_url TEXT);
+INSERT INTO schools VALUES (1,'University A','United States','New York'),(2,'University B','United Kingdom','London'),(3,'University C','Canada','Toronto'),(4,'University D','Australia','Sydney');
+INSERT INTO programs VALUES (1,1,'Data Science','Master','Computer Science',42000,'2026-01-15','https://example.edu/a'),(2,2,'Business Analytics','Master','Business',35000,'2026-03-01','https://example.edu/b'),(3,3,'Public Policy','Master','Social Science',NULL,'2026-02-01','https://example.edu/c'),(4,4,'Information Systems','Master','Information Technology',NULL,'2026-04-15','https://example.edu/d');
+INSERT INTO requirements VALUES (1,1,6.5,'https://example.edu/a'),(2,2,7.0,'https://example.edu/b'),(3,3,NULL,'https://example.edu/c'),(4,4,6.5,'https://example.edu/d');

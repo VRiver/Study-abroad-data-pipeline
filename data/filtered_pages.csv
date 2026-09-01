@@ -1,0 +1,7 @@
+﻿url,title,content,page_status,exclude_reason
+https://example.edu/program/data-science,MSc Data Science,Tuition Admission Requirements IELTS Application Deadline,keep,包含项目相关字段
+https://example.edu/news/2025,University News,Latest university news,exclude,URL包含无关页面关键词：/news
+https://example.edu/login,Login,Please sign in,exclude,URL包含无关页面关键词：/login
+https://example.edu/program/business,Business Analytics,Program tuition IELTS,keep,包含项目相关字段
+https://example.edu/contact,Contact Us,Contact information and office hours,exclude,URL包含无关页面关键词：/contact
+https://example.edu/faculty/computer-science,Computer Science Faculty,Faculty members and research areas,review,无法确认是否为项目页面

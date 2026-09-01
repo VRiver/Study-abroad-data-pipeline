@@ -1,0 +1,9 @@
+{
+    "school_name": "University of Example",
+    "country": "United States",
+    "program_name": "MSc Data Science",
+    "degree": "Master",
+    "ielts_min": 6.5,
+    "tuition_amount": null,
+    "source_url": "https://example.edu/program"
+}

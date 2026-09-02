@@ -40,7 +40,7 @@
 ## 4. 项目结构
 
 ```text
-数据岗位冲刺/
+Program/
 ├── data/
 │   ├── programs.csv
 │   ├── books_scraped.csv
